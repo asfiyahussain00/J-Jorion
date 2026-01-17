@@ -329,7 +329,9 @@ document.getElementById("productImage").src = img;
 document.getElementById("productDesc").textContent = desc;
 
 document.querySelector(".order-btn").href =
-  `https://wa.me/+9232146956?text=I want to order ${name} for Rs ${price}`;
+  // `https://wa.me/+9232146956?text=I want to order ${name} for Rs ${price}`;
+ `https://wa.me/923032146956?text=${encodeURIComponent(`I want to order ${name} for Rs ${price}`)}`;
+
 </script>
 
 <div class="footer-section">
